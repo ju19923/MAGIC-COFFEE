@@ -1,0 +1,409 @@
+/* ESTILOS GLOBALES */
+body {
+    padding-bottom: 40px;
+    color: #ffffff; /* Texto blanco */
+    background-color: #6a1b9a; /* Morado oscuro como color de fondo */
+    font-family: Arial, sans-serif; /* Fuente general */
+}
+
+/* PERSONALIZAR LA BARRA DE NAVEGACIÓN */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar-inverse {
+    background-color: #6f42c1; /* Color morado */
+    border-color: #6f42c1; /* Color morado para el borde */
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff; /* Color blanco para el texto de la marca */
+    font-size: 1.8rem; /* Tamaño de fuente para el nombre de la marca */
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff; /* Color blanco para los enlaces */
+    font-size: 1,7rem; /* Tamaño de fuente para los enlaces de navegación */
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #d3b8e0; /* Color morado claro para el hover de los enlaces */
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #6f42c1; /* Color morado para el borde del botón toggle */
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ffffff; /* Color blanco para las barras del botón toggle */
+}
+
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #4a0072; /* Morado oscuro para la barra de navegación */
+    border-color: #4a0072; /* Morado oscuro para el borde de la barra de navegación */
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+/* PERSONALIZAR EL CARRUSEL */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+.carousel-caption {
+    z-index: 10;
+    color: #ffffff;
+}
+
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+/* CONTENIDO DE MARKETING */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+    color: #ffffff; /* Texto blanco para los títulos de marketing */
+    font-size: 2rem; /* Tamaño de fuente para los títulos de marketing */
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #ffffff; /* Texto blanco en los párrafos de marketing */
+    font-size: 1.8rem; /* Tamaño de fuente para los párrafos de marketing */
+}
+
+/* Reportajes especiales */
+.featurette-divider {
+    margin: 80px 0; /* Espaciar más el Bootstrap <hr> */
+}
+
+/* Reducir los títulos de marketing */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #ffffff; /* Texto blanco para los títulos de featurette */
+    font-size: 3.2rem; /* Tamaño de fuente para los títulos de featurette */
+}
+
+/* CSS RESPONSIVO */
+@media (min-width: 768px) {
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 4px; /* La barra de navegación se separa de la parte superior, por lo que redondeamos las esquinas */
+    }
+
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 4rem; /* Tamaño de fuente para pantallas grandes */
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+/* Botones mostaza */
+.btn-warning {
+    background-color: #f0ad4e; /* Amarillo mostaza */
+    border-color: #eea236;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+/* ESTILOS PARA VIDEOS */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo general para las imágenes en la galería */
+.img-thumbnail {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de zoom al pasar el mouse */
+.img-thumbnail:hover {
+    transform: scale(1.4); /* Aumenta el tamaño de la imagen al 110% */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+
+/* Ajustar la posición de la sección de videos */
+#videos {
+    margin-top: -128px; /* Aumenta este valor para mover la sección más arriba */
+}
+
+/* Asegurar que las imágenes se ajusten y centren correctamente */
+.featurette-image {
+    max-width: 100%; /* Asegura que no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Se asegura que la imagen sea tratada como un bloque */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */
+}
+
+/* Flexbox para centrar verticalmente */
+.d-flex {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente la imagen */
+    height: 100%; /* Asegura que la altura se ajuste correctamente */
+}
+
+/* Imagen de la sección "Sobre Nosotros" */
+#sobre-nosotros .featurette-image {
+    max-width: 400px; /* Limita el ancho máximo de la imagen de 'Sobre Nosotros' */
+}
+
+/* Imagen de la sección "Misión y Visión" */
+#mision-vision .featurette-image {
+    max-width: 400px; /* Limita el ancho máximo de la imagen de 'Misión y Visión' */
+}
+
+/* Aseguramos que las imágenes se adapten en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .featurette-image {
+        max-width: 100%; /* Ocupar todo el ancho disponible en pantallas pequeñas */
+    }
+}
+
+/* Efecto de zoom en la imagen de la sección "Misión y Visión" */
+#mision-vision .featurette-image {
+    transition: transform 0.5s ease; /* Transición suave para el efecto de zoom */
+}
+
+#mision-vision .featurette-image:hover {
+    transform: scale(1.3); /* Escala la imagen al 110% al pasar el cursor */
+}
+
+/* Efecto de zoom en la imagen de la sección "Sobre Nosotros" */
+#sobre-nosotros .featurette-image {
+    transition: transform 0.5s ease; /* Transición suave para el efecto de zoom */
+}
+
+#sobre-nosotros .featurette-image:hover {
+    transform: scale(1.3); /* Escala la imagen al 110% al pasar el cursor */
+}
+/* ESTILOS GENERALES DE TÍTULOS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif; /* Tipografía uniforme para todos los títulos */
+    color: #ffffff; /* Color blanco para todos los títulos */
+    font-weight: bold; /* Negrita para todos los títulos */
+    margin-bottom: 25px; /* Espaciado inferior uniforme para los títulos */
+}
+.img-circle {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .img-circle:hover {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Puedes cambiar el color del resplandor */
+  }
+  .img-circle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .img-circle:hover {
+    transform: scale(1.8); /* Zoom */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Resplandor */
+  }
+  /* Ajuste del contenedor de la galería */
+.gallery-container {
+    padding: 0 15px; /* Agrega un margen horizontal de 15px en ambos lados */
+}
+
+/* Ajuste del contenedor de "Sobre Nosotros" */
+#sobre-nosotros {
+    padding: 0 15px; /* Agrega un margen horizontal de 15px en ambos lados */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1140px; /* Limita el ancho máximo del contenedor para pantallas grandes */
+}
+
+/* Estilo del texto en la sección "Sobre Nosotros" */
+#sobre-nosotros h2, 
+#sobre-nosotros p {
+    margin: 0 0 20px; /* Espacio inferior de 20px para los títulos y párrafos */
+    line-height: 1.5; /* Mejora la legibilidad del texto */
+}
+
+/* Asegura que el texto y el contenido no se desborden */
+#sobre-nosotros .container {
+    padding-left: 0; /* Elimina el padding a la izquierda */
+    padding-right: 0; /* Elimina el padding a la derecha */
+}
+/* Ajuste del contenedor de la Galería de Imágenes */
+.gallery-container {
+    padding: 0 15px; /* Agrega un margen horizontal de 15px en ambos lados */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1140px; /* Limita el ancho máximo del contenedor para pantallas grandes */
+}
+
+/* Ajuste del contenedor de la Galería de Imágenes */
+#galeria-imagenes {
+    padding: 0 15px; /* Agrega un margen horizontal de 15px en ambos lados */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1140px; /* Limita el ancho máximo del contenedor para pantallas grandes */
+}
+
+#ofertas {
+    margin-top: 70px; /* Ajusta este valor según la altura de tu barra de navegación fija */
+  } 
+  
+
+.social-media {
+  margin: 10px 0;
+}
+
+.social-icon {
+  color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icon i {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Apila los elementos en vertical en pantallas pequeñas */
+    text-align: center;
+  }
+  
+  
+  }
+ 
+.social-icon i {
+    font-size: 20px;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer {
+    margin-top: auto; /* Empuja el pie de página hacia el fondo */
+   
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Centra el texto */
+  }
+  
+  .container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .footer-content {
+    margin-bottom: 10px; /* Espacio entre los párrafos */
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #f4f0f0;
+    margin: 0; /* Elimina el margen predeterminado */
+  }
+  
+  .social-media {
+    margin-top: 10px; /* Espacio encima de los íconos sociales */
+  }
+  
+  .social-icon {
+    color: #f9f9f9;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-icon i {
+    font-size: 24px;
+  }
+  <style>
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    color: white; /* Color del texto blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+</style>
+ 
